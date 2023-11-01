@@ -1,0 +1,23 @@
+   /* BackGround Color*/
+   body{
+    color: #fff;
+    background: #fff;
+}
+/*text shadow*/
+.glow {
+   animation: flash 0.2s ease infinite alternate;
+}
+/*Flash Animation*/
+@keyframes flash {
+    /* from red*/
+    from {
+        text-shadow:
+        0 0 5px red, 0 0 10px red,
+        0 0 20px red, 0 0 40px red;
+    }
+    to {
+        text-shadow:
+        0 0 5px blue, 0 0 10px blue,
+        0 0 20px blue, 0 0 40px blue;
+    }
+}
